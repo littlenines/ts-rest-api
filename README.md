@@ -15,9 +15,9 @@ A REST API built with Node.js, Express, TypeScript, and SQLite.
 src/
 ├── constants/        # HTTP status codes
 ├── features/
-│   ├── users/        # User routes, controller, service, entity, dto
-│   ├── posts/        # Post routes, controller, service, entity, dto
-│   └── comments/     # Comment routes, controller, service, entity, dto
+│   ├── users/        # User routes, controller, service, types, dto
+│   ├── posts/        # Post routes, controller, service, types, dto
+│   └── comments/     # Comment routes, controller, service, types, dto
 ├── routes/           # Root router
 ├── utils/            # Shared helpers (tryCatch, updateRow, response, etc.)
 ├── db.ts             # SQLite connection and table setup
@@ -48,7 +48,7 @@ npm run dev     # start the dev server on port 3000
 |--------|-----|-------------|
 | GET | /api/v1/posts | Get all posts |
 | GET | /api/v1/posts/:id | Get post by id |
-| GET | /api/v1/posts/users/:id | Get posts by user |
+| GET | /api/v1/posts/:id/user | Get posts by user |
 | POST | /api/v1/posts | Create post |
 | PATCH | /api/v1/posts/:id | Update post |
 | DELETE | /api/v1/posts/:id | Delete post |
